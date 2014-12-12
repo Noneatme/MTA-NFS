@@ -1,3 +1,4 @@
+-- // COMMENT BY NONEATME: This Class is not required anymore because MTA has it's own class libary for OOP now.
 --// shared.utils.class
 --||	@type:	Shared
 --||	@desc:	A library providing several tools to enhance OOP with Lua

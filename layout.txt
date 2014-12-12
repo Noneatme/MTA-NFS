@@ -1,0 +1,43 @@
+-- ###############################
+-- ## Project: MTA:Speedrace	##
+-- ## Name: Script				##
+-- ## Author: Noneatme			##
+-- ## Version: 1.0				##
+-- ## License: See top Folder	##
+-- ###############################
+
+-- FUNCTIONS / METHODS --
+
+local cFunc = {};		-- Local Functions 
+local cSetting = {};	-- Local Settings
+
+Script = {};
+Script.__index = Script;
+
+--[[
+
+]]
+
+-- ///////////////////////////////
+-- ///// New 				//////
+-- ///////////////////////////////
+
+function Script:New(...)
+	local obj = setmetatable({}, {__index = self});
+	if obj.Constructor then
+		obj:Constructor(...);
+	end
+	return obj;
+end
+
+
+-- ///////////////////////////////
+-- ///// Constructor 		//////
+-- ///////////////////////////////
+
+function Script:Constructor(...)
+	
+	logger:OutputInfo("[CALLING] Script: Constructor");
+end
+
+-- EVENT HANDLER --

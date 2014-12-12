@@ -1,0 +1,52 @@
+-- ###############################
+-- ## Project: MTA:Speedrace	##
+-- ## Name: RegisterBoxGUI		##
+-- ## Author: Noneatme			##
+-- ## Version: 1.0				##
+-- ## License: See top Folder	##
+-- ###############################
+
+-- FUNCTIONS / METHODS --
+
+local cFunc = {};		-- Local Functions 
+local cSetting = {};	-- Local Settings
+
+CG.RegisterBox = {};
+CG.RegisterBox.__index = CG.RegisterBox;
+
+
+-- ///////////////////////////////
+-- ///// New 				//////
+-- ///////////////////////////////
+
+function CG.RegisterBox:New(...)
+	local obj = setmetatable({}, {__index = self});
+	if obj.Constructor then
+		obj:Constructor(...);
+	end
+	return obj;
+end
+
+-- ///////////////////////////////
+-- ///// Open		 		//////
+-- ///////////////////////////////
+
+function CG.RegisterBox.Open(...)
+	
+end
+
+-- ///////////////////////////////
+-- ///// Constructor 		//////
+-- ///////////////////////////////
+
+function CG.RegisterBox:Constructor(...)
+	self.renderFunc = function()
+		self:RenderGui();
+	end
+	
+	self.state = false;
+	
+	logger:OutputInfo("[CALLING] CG.RegisterBox: Constructor");
+end
+
+-- EVENT HANDLER --

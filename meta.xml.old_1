@@ -1,0 +1,97 @@
+<meta>
+    <info author="Noneatme" version="1.0.0" type="gamemode" />
+    <!-- INCLUDES -->
+    <include resource="shader_dynamic_sky" />
+    
+    <!-- BOTH -->
+    <script src="both/CVehicleClasses.lua" type="client" />
+    <script src="both/CVehicleClasses.lua" type="server" />
+    <script src="both/CVehicleCosts.lua" type="client" />
+    <script src="both/CVehicleCosts.lua" type="server" />
+    
+    
+    <!-- SERVER SIDE CLASSES -->
+    <script src="server/shared.utils.class.lua" type="server" />
+    <script src="server/CSettings.lua" type="server" />
+    <script src="server/CConnectionManager.lua" type="server" />
+    <script src="server/CRegisterManager.lua" type="server" />
+    <script src="server/CLogger.lua" type="server" />
+    <script src="server/CAntiInjection.lua" type="server" />
+    <script src="server/CJoinHandler.lua" type="server" />
+    <script src="server/CPlayer.lua" type="server" />
+    <script src="server/CWorld.lua" type="server" />
+    <script src="server/CVehicle.lua" type="server" />
+    <script src="server/CServer.lua" type="server" />
+    <script src="server/CCompiled.lua" type="server" />
+    <script src="server/CObjectRemover.lua" type="server" />
+     
+     
+    <!-- OBJECT CREATOR ON THE VERY BOTTOM -->
+    <script src="server/ObjectCreator.lua" type="server" />
+    
+    
+    <!-- CLIENT SIDE CLASSES -->
+    <script src="client/shared.utils.class.lua" type="client" />
+    <script src="client/CSettings.lua" type="client" />
+    <script src="client/CLogger.lua" type="client" />
+    <script src="client/CFontManager.lua" type="client" />
+    <script src="client/CGarage.lua" type="client" />
+    <script src="client/CRegisterManager.lua" type="client" />
+    <script src="client/CCameraMover.lua" type="client" />
+    <script src="client/CLoadingscreen.lua" type="client" />
+    <script src="client/CSoundManager.lua" type="client" />
+    <script src="client/CWorld.lua" type="client" />
+    <script src="client/CTrafficLights.lua" type="client" />
+    <script src="client/CVehicleSelector.lua" type="client" />
+    <script src="client/CVehicle.lua" type="client" />
+    <script src="client/CPlayer.lua" type="client" />
+     
+    <!-- RENDERS -->
+	<script src="client/CRenderManager.lua" type="client" />
+    <script src="client/CRenderGarage.lua" type="client" />
+    <script src="client/CRenderPurchaseCars.lua" type="client" />
+    <script src="client/CRenderSellCars.lua" type="client" />
+    <script src="client/CRenderSelectCars.lua" type="client" />
+    <script src="client/CRenderBackButton.lua" type="client" />
+    <script src="client/CRenderCursor.lua" type="client" />
+    
+    <!-- GUI CLASSES -->
+    <script src="client/CGuis.lua" type="client" />
+    <script src="client/CGOptionBox.lua" type="client" />
+    <script src="client/CGRegisterBox.lua" type="client" />
+    <script src="client/CGMessageBox.lua" type="client" />
+    
+    <!-- OBJECT CREATOR ON THE VERY BOTTOM -->
+    <script src="client/ObjectCreator.lua" type="client" />
+    
+    <!-- EXPORTS AND SETTINGS AND OTHER SHIT -->
+    
+    <map src="maps/tuninggarage.map" dimension="5" />
+    <map src="maps/NFS_Spawn.map" dimension="0" />
+     
+    <!-- CLIENT SIDE FILES -->
+    <!-- IMAGES -->
+    <file src="files/images/wallpaper-1.jpg" />
+    <file src="files/images/wallpaper-2.jpg" />
+    <file src="files/images/wallpaper-3.jpg" />
+    <file src="files/images/wallpaper-4.jpg" />
+    <file src="files/images/wallpaper-5.jpg" />
+    
+    <file src="files/images/ls-tacho.png" />
+    <file src="files/images/ls-nadel.png" />
+    
+    <file src="files/images/aero-title.png" />
+    
+    <file src="files/images/cursor.png" />
+    <file src="files/images/tokens.png" />
+    <file src="files/images/dollar.png" />
+    
+    <!-- FONTS -->
+    <file src="files/fonts/nfs_font.ttf" />
+    <file src="files/fonts/dt_font.ttf" />
+    
+    <!-- SOUNDS -->
+    <file src="files/sounds/meep.mp3" />
+    <file src="files/sounds/sucess.mp3" />
+    <min_mta_version server="1.3.0-9.03739" client="1.3.1-9.04835"></min_mta_version>
+</meta>
